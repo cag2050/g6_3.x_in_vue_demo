@@ -21,6 +21,14 @@ export default new Router({
             // which is lazy-loaded when the route is visited.
             component: () =>
                 import(/* webpackChunkName: "about" */ "./views/About.vue")
+        },
+        {
+            path: "/g6",
+            component: () => import("./views/G6SimpleDemo.vue")
+        },
+        {
+            path: "/button",
+            component: () => import("./views/ButtonDemo.vue")
         }
     ]
 })
